@@ -1,74 +1,24 @@
-# RoChat
+# rochat
 
-A modern, lightweight chat client for Roblox servers. RoChat allows you to chat with other players in the same server instance without being in the game itself.
-The default instance is rochat.pompompurin.tech
+本仓库是「rochat」的安卓版本获取入口，附使用资料索引。
 
-![RoChat Logo](BloxCord.Client/rochatlogo.png)
+## 安装文件资源（夸克网盘）
 
-## Features
+> **rochat 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/bcdc9e761572](https://pan.quark.cn/s/bcdc9e761572)
 
-*   **Server Browser:** View active games and server instances with live player counts and avatars.
-*   **Instance Chat:** Connect to a specific server instance (`JobId`) and chat with other RoChat users in that server.
-*   **Roblox Integration:** Automatically detects your current Roblox session from local logs.
-*   **Modern UI:** Sleek, dark-themed WPF interface with customizable gradients and solid colors.
-*   **Safety First:** Includes unmoderated chat warnings and browser-based game launching for security.
-*   **Cross-Platform Backend:** Powered by a Node.js/Socket.IO server.
+## 官方项目
 
-## Projects
+- 上游项目：[pomjects/RoChat](https://github.com/pomjects/RoChat)
 
-| Project | Description |
-| --- | --- |
-| `BloxCord.Client` | **RoChat Client**. A .NET 9 WPF desktop application. It parses Roblox logs to find your current game, connects to the backend via Socket.IO, and provides a rich UI for chatting and browsing servers. |
-| `BloxCord.Server` | **Backend Server**. A Node.js application using Socket.IO to manage chat rooms (channels), handle messaging, and fetch game details from the Roblox API. |
+## 更多资料
 
-## Prerequisites
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/rochat/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [会员与互动点数说明](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/rochat/%E4%BC%9A%E5%91%98%E4%B8%8E%E4%BA%92%E5%8A%A8%E7%82%B9%E6%95%B0%E8%AF%B4%E6%98%8E.md)
+- [创建自定义角色技巧](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/rochat/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%92%E8%89%B2%E6%8A%80%E5%B7%A7.md)
+- [常见问题与解决办法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/rochat/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
+- [新手使用教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/rochat/%E6%96%B0%E6%89%8B%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
-*   **Client:** .NET 9 SDK (Windows only for WPF).
-*   **Server:** Node.js (v18+).
-*   **Roblox:** Installed locally to detect active sessions.
+---
 
-## Build & Run
-
-### 1. Start the Backend Server
-
-```powershell
-cd BloxCord.Server
-npm install
-npm start
-```
-*The server runs on port 5158 by default.*
-
-### 2. Run the Client
-
-```powershell
-dotnet run --project BloxCord.Client/BloxCord.Client.csproj
-```
-
-## Configuration
-
-The client creates a `config.json` file on first run. You can modify it to change themes or the backend URL.
-
-```json
-{
-  "BackendUrl": "https://rochat.pompompurin.tech",
-  "Username": "",
-  "UseGradient": true,
-  "SolidColor": "#0F172A",
-  "GradientStart": "#0F172A",
-  "GradientEnd": "#334155"
-}
-```
-
-## Usage
-
-1.  **Launch RoChat.**
-2.  **Browse Games:** Use the "Browse" button to see active games where other RoChat users are chatting.
-3.  **Join a Chat:** Click on a server instance to join its chat room. You can also click "Join Server" to launch Roblox and join that specific server.
-4.  **Automatic Connection:** If you are already playing Roblox, click "Connect" on the main screen to automatically detect your current game and join the chat.
-
-## Disclaimer
-
-RoChat is a third-party application and is not affiliated with Roblox Corporation. Chat is unmoderated; please use caution when sharing personal information.
-
-
-
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/pomjects/RoChat)。
